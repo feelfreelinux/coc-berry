@@ -1,0 +1,53 @@
+{
+  "name": "coc-berry",
+  "displayName": "Berry Script Language",
+  "description": "Berry highlighting for coc.nvim",
+  "version": "0.1.0",
+  "publisher": "feelfreelinux",
+  "engines": {
+      "coc": "^0.0.77"
+  },
+  "keywords": [
+    "coc.nvim",
+    "berry"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "berry",
+        "aliases": [
+          "Berry",
+          "berry"
+        ],
+        "extensions": [
+          ".be"
+        ],
+        "configuration": "./berry-configuration.json"
+      },
+      {
+        "id": "berry-bytecode",
+        "aliases": [
+          "Berry Bytecode",
+          "berry bytecode"
+        ],
+        "extensions": [
+          "berry.bytecode"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "berry",
+        "scopeName": "source.berry",
+        "path": "./syntaxes/berry.json"
+      },
+      {
+        "language": "berry-bytecode",
+        "scopeName": "source.berry.bytecode",
+        "path": "./syntaxes/bytecode.json"
+      }
+    ]
+  },
+  "__metadata": null
+}
+
